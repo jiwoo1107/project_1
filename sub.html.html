@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+ 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $('button:nth-of-type(1)').click(function(){
+        $("#detail").show();
+        $("#review").hide();
+        $("#expect").hide();
+        $("#place").hide();
+        $("#cancel").hide();
+    });
+
+    $('button:nth-of-type(2)').click(function(){
+        $("#review").show();
+        $("#detail").hide();
+        $("#expect").hide();
+        $("#place").hide();
+        $("#cancel").hide();
+    });
+
+    $('button:nth-of-type(3)').click(function(){
+        $("#expect").show();
+        $("#review").hide();
+        $("#detail").hide();
+        $("#place").hide();
+        $("#cancel").hide();
+    });
+
+    $('button:nth-of-type(4)').click(function(){
+        $("#place").show();
+        $("#review").hide();
+        $("#expect").hide();
+        $("#detail").hide();
+        $("#cancel").hide();
+    });
+
+    $('button:nth-of-type(5)').click(function(){
+        $("#cancel").show();
+        $("#review").hide();
+        $("#expect").hide();
+        $("#place").hide();
+        $("#detail").hide();
+    });
+});
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+</head>
+
+<body>
+ 
+    <header>
+        <div class="login">
+            <div class="container">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">예매확인/취소</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                    <li>|</li>
+                    <li><a href="#">관계사</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="logo"><a href="#">
+         TICKET<span>LINK</span></a>
+        </div>
+
+        <nav>
+            <div class="box">
+                <div class="home">
+                    <ul>
+                        <li><a href="$">홈</a></li>
+                        <li><a href="$">공연</a></li>
+                        <li><a href="$">전시</a></li>
+                        <li><a href="$">스포츠</a></li>
+                        <li>|</li>                    
+                        <li><a href="!">랭킹</a></li>
+                        <li><a href="!">지역</a></li>
+                        <li><a href="!">공연장</a></li>
+                        <li><a href="!">이벤트/쿠폰</a></li>
+                    </ul> 
+                </div>
+                <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="검색어를 입력하세요." name="search">
+                    <button type="submit"><i class="fa fa-search" ></i></button>
+                  </form>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+   <section>
+    <div id="box1">
+        <div class="ticketif">
+            <img src="" alt="">
+            <div class="ticketif2"> 
+                <img src="img/드라큘라.jpg" alt="">
+            <div class="ticketinfo">
+            <h1>뮤지컬 드라큘라 (Dracula：The Musical)</h1>
+            <ul class="info1">
+                <li><span>장소</span>샤롯데씨어터</li>
+                <li><span>관람시간</span> 165분(인터미션:20분)</li>
+                <li><span>기간</span>2023.12.06-2024.03.03</li>
+                <li><span>관람등급</span> 14세이상</li>
+            </ul>
+            
+            <ul class="info1">
+                <li><span class="price">가격</span>
+                VIP석 <strong> 170,000원</strong> <br>
+                <span id="seat">R석</span> <strong>140,000원</strong><br>
+                <span id="seat">S석</span><strong> 110,000원</strong><br>
+                <span id="seat">A석</span>  <strong>80,000원</strong> <br>
+            </li>
+                
+                <li> <span>할인</span>
+                청소년(2006~2011년출생자/1인1매) <strong> 30%</strong> 할인 <br>
+                <span id="seat">장애인할인(1-3급,중증/1인2매)</span> <strong>30%</strong> 할인 <br>
+                <span id="seat">장애인할인(4-6급,경증/1인1매)</span> <strong>30% </strong>할인 <br>
+                <span id="seat">국가유공자할인(유족증불가/1인1매)</span> <strong>30%</strong> 할인</li>
+            </ul>
+            <div class="reservation">예매하기</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 캐스팅 -->
+    <div class="cast">
+    <h3>출연진</h3>
+    <button> 《 </button>
+    <div id="casting">
+        <article>
+            <img src="img/출연진_김준수.jpeg" alt="">
+            <h4>김준수</h4> <p>드라큘라</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_전동석.JPG" alt="">
+            <h4>전동석</h4> <p>드라큘라</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_신성록.JPG" alt="">
+            <h4>신성록</h4> <p>드라큘라</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_임혜영.JPG" alt="">
+            <h4>임혜영</h4>
+            <p>미나</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_정선아.JPG" alt="">
+            <h4>정선아</h4>
+            <p>미나</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_아이비.JPG" alt="">
+            <h4>아이비</h4> <p>미나</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_손준호.JPG" alt="">
+            <h4>손준호</h4> <p>반 헬싱</p>
+        </article>
+
+        <article>
+            <img src="img/출연진_박은석.JPG" alt="">
+            <h4>박은석</h4> <p>반 헬싱</p>
+        </article>
+        </div>
+        <button> 》</button>
+    </div>
+    <!-- 상세정보 -->
+    <div id="wrap">
+    <div class="category">
+        <button type="button" class="cate">상세정보</button>
+        <button type="button" class="cate">관람후기</button>
+        <button type="button" class="cate">기대평</button>
+        <button type="button" class="cate">장소정보</button>
+        <button type="button" class="cate">예매/취소안내</button>
+    </div>
+
+    <div id="detail">
+        <h3>공연시간 정보</h3> <br>
+        <p>2023년 12월 06일(수) ~ 2024년 03월 03일(일) <br>
+            화,목,금 7시 30분│수 2시 30분, 7시 30분│토,일,공휴일 2시, 7시│월 공연 없음 <br>
+            <br>
+            - 2월 10일(토) 7시, 2월 13일(화) 7시 30분 공연 없음 <br>
+            - 2월 9일(금) 2시, 7시, 2월 12일(월) 2시 공연 있음 <br>
+            <br>
+            ※ 1월 20일(토) 2시, 7시, 1월 28일(일) 2시 공연은 기업단체판매로 마감되었습니다. <br>  
+            ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다. <br>
+            ※ 회차당 1인 4매 구매 가능합니다.​</p><br>
+        <h3>공지사항</h3>
+        <a href="#"><div id="notice">
+            이 상품은 <span>도서 공연비 소득공제</span> 혜택이 적용됩니다.
+        </div></a>
+        <p> * 4차 티켓 오픈 일시 : 2023년 12월 29일(금) 오후 2시 <br>
+            * 4차 티켓 오픈 기간 : 2024년 2월 06일(화) ~ 2월 18일(일) <br>
+            <br>
+            * 예매/취소 마감 일시 : 공연 전일 17시 (단, 일요일 공연 및 공휴일 전일 11시 마감)</p>
+            <img src="img/dracula.1-1.jpg" alt="">
+            <img src="img/dracula.1.jpg" alt="">
+            <div id="gong"></div>
+        <h3>기획사 및 제작사 정보</h3>
+        <p>주최 : SBS <br>
+            제작 : 오디컴퍼니㈜ <br>
+            공동제작 : TBC, ㈜롯데엔터테인먼트 <br>
+            투자 : ㈜인터파크트리플, TJB <br>
+            홍보마케팅 : 오픈리뷰㈜​</p>
+    </div>
+
+    <div id="review">
+        <h1 id="h1_1">관람후기 <span>5</span></h1>
+        <h1 id="h1_2">★★★★★ 5.0 / 5</h1>
+    
+        <div id="reviewbox">
+            <p>게시판 운영규정에 맞지 않는 글은 사전 통보없이 삭제될 수 있습니다.</p>
+            <input type="text" size="30" value="관람후기를 남겨보세요!">
+            <div id="regi">
+            <span>등록</span>
+            </div>
+        </div>
+        <div id="reviewbox1">
+           <p id="rv1">★★★★★ <br>
+            너무 너무 재밌었어요 ㅜㅜ <br>
+            <br>
+            <p id="rv2">sa***@naㆍ <span>2023.12.08 23:02</span></p>
+            </p>
+        </div>
+        <div id="reviewbox1">
+            <p id="rv1">★★★★★ <br>
+             첫공부터 완벽했어요... 배우분들 연기도 너무 좋았습니다! <br>
+             <br>
+             <p id="rv2">je***@naㆍ <span>2023.12.15 15:45</span></p>
+             </p>
+         </div>
+         <div id="reviewbox1">
+            <p id="rv1">★★★★★ <br>
+             미쳐따. <br>
+             <br>
+             <p id="rv2">we***@naㆍ <span>2023.12.20 20:35</span></p>
+             </p>
+         </div>
+         <div id="reviewbox1">
+            <p id="rv1">★★★★★ <br>
+             오늘 보고왔는데 다들 얼굴 미쳤고 너무 재밌었어요 ㅜㅜ<br>
+             <br>
+             <p id="rv2">td***@naㆍ <span>2023.12.23 17:45</span></p>
+             </p>
+         </div>
+         <div id="reviewbox1">
+            <p id="rv1">★★★★★ <br>
+             왜 이제서야 봤을까여? 정말 아쉽습니다....<br>
+             <br>
+             <p id="rv2">ee***@naㆍ <span>2023.01.02 08:01</span></p>
+             </p>
+         </div>
+        </div>
+
+        <!-- 기대평 -->
+        <div id="expect">
+            <h1 id="e1_1">기대평 <span id="five">5</span> </h1> 
+            <br>
+        
+            <div id="expectbox">
+                <p>게시판 운영규정에 맞지 않는 글은 사전 통보없이 삭제될 수 있습니다.</p>
+                <input type="text" size="30" value="기대평을 남겨보세요!">
+                <div id="regi">
+                <span>등록</span>
+                </div>
+            </div>
+            <div id="expectbox1">
+               <p id="ep1">재밌을 것 같아요. 벌써부터 잠 못 듭니다..<br>
+                <br>
+                <p id="ep2">sw***@naㆍ <span>2023.12.02 22:02</span></p>
+                </p>
+            </div>
+            <div id="expectbox1">
+                <p id="ep1">ㅎㅎ<br>
+                 <br>
+                 <p id="ep2">2s***@naㆍ <span>2023.12.10 15:05</span></p>
+                 </p>
+             </div>
+             <div id="expectbox1">
+                <p id="ep1">기대합니다.<br>
+                 <br>
+                 <p id="ep2">we***@naㆍ <span>2023.12.10 18:35</span></p>
+                 </p>
+             </div>
+             <div id="expectbox1">
+                <p id="ep1">빨리 보고싶어요~~<br>
+                 <br>
+                 <p id="ep2">df***@naㆍ <span>2023.12.20 17:45</span></p>
+                 </p>
+             </div>
+             <div id="expectbox1">
+                <p id="ep1">댓글 참여<br>
+                 <br>
+                 <p id="ep2">12***@naㆍ <span>2023.01.05 21:01</span></p>
+                 </p>
+             </div>
+        </div>
+
+        <div id="place">
+        <h1>공연장 정보</h1>
+        <div id="placebox">
+        <p>장소 : 샤롯데씨어터 <br>
+            주소 : 서울특별시 송파구 송파대로 521 잠실자전거수리센터 <br>
+            대표번호 : 1644-0078</p> <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8815428368885!2d127.09727447642223!3d37.51071192732625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5a72092e9d5%3A0xa7654fec3c9224d8!2z7IOk66Gv642w7JSo7Ja07YSw!5e0!3m2!1sko!2skr!4v1704786404686!5m2!1sko!2skr" 
+            width="1188" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        </div>
+
+        <div id="cancel">
+            <h3>예매/취소안내</h3>
+            <div id="guide1">
+                <h3>티켓 수령안내</h3>
+                <p> <strong> 1&#41; 일반배송</strong> <br>
+                    예매 완료(결제 완료)확인 후, 인편배송으로 영업일 기준 10일 이내 티켓을 수령하실 수 있습니다. <br>
+                    티켓을 배송하기 위한 배송료는 고객이 부담합니다. <br>
+                    행사 또는 관람일에 따라 일반배송 선택이 제한될 수 있습니다.</p>
+                <br> <br>
+                <p>
+                    <strong>2&#41; 현장수령</strong> <br>
+                    행사 당일 공연 시작 시간 1시간 전 ~ 30분 전까지 행사장 매표소에서 티켓을 수령하실 수 있습니다. <br>
+                    현장 매표소에서 예매 완료 SMS 또는 예매번호 및 예매자 정보 확인 후 티켓을 수령할 수 있습니다. <br>
+                    기획사 정책 또는 행사일에 따라 현장 수령 방법의 선택이 제한될 수 있습니다. <br>
+                </p>
+            </div>
+            <div id="guide2">
+                <h3>예매 취소 안내</h3>
+                <p> 예매 당일 취소하는 경우 이외에는 예매수수료는 환불되지 않습니다. <br>
+                    <br>
+                    티켓 예매 후 7일 이내 취소 시 취소수수료는 부과되지 않습니다. <br>
+                    단, 예매 후 7일 이내라도 취소시점이 관람일로부터 10일 이내라면 그에 해당하는 취소수수료가 부과됩니다. <br>
+                    <br>
+                    배송 받은 티켓의 반품 접수는 취소가능시간 이내(영업일 기준)에 우편(빠른 등기) 또는 본사 반품을 통해서 입고 완료 건에 한하여 취소 가능하며, 입고 일을 기준으로 취소수수료 적용됩니다. <br>
+                    일반우편 또는 택배로 반송 시 발생되는 분실, 지연 도착 등의 문제는 티켓링크에서 책임지지 않으니 이점 유의하시기 바랍니다. <br>
+                    <br>
+                    일부 공연의 경우 취소 가능 시간이 상이할 수 있습니다. 
+                    </p>
+            </div>
+            <div id="guide3">
+                <h3>티켓 환불 안내</h3>
+                <p>예매취소 시 취소수수료와 배송료를 제외한 나머지 금액이 환불 됩니다. <br>
+                    취소수수료는 상품별로 상이할 수 있으며 상품 상세정보 하단에서 확인할 수 있습니다. <br>
+                    무통장입금으로 결제한 경우 환불처리를 위해 예매자 본인명의의 계좌정보(예금주, 은행, 계좌번호)를 입력해야 하며 접수일로부터 3~5일(영업일기준)이내 환불 받을 수 있습니다. <br>
+                    <br>
+                    상품에 따라 환불 시 송금수수료 500원이 부과될 수 있습니다. <br>
+                    <br>
+                    <br>
+                    <br>
+                    신용카드로 결제한 경우 취소일로부터 3~6일(영업일기준)이내 카드사에서 승인취소를 확인할 수 있습니다. <br>
+                    <br>
+                    계좌이체, 실시간 계좌출금으로 결제한 경우 취소 시 1~2일(영업일 기준)이내 환불 됩니다. <br>
+                    휴대폰결제로 결제한 경우 당월 취소 시 즉시 환불되나 익월 취소 시에는 최대 60일까지 소요됩니다. <br>
+                    PAYCO포인트, 예매권, 상품권으로 결제한 경우 취소 시 즉시 계정으로 환불 됩니다.</p>
+            </div>
+        </div>
+    </div>
+    
+   </section>
+   <div id="category">
+    <div id="cate_0">
+    <p>스포츠</p>
+    <div class="click">
+       <a href="#">
+      <img src="img/스포츠.stop.gif" alt="" class="static">
+      <img src="img/스포츠.forever.gif" alt="" class="animated"></a>
+       </div>  
+</div>
+<div id="cate_0">
+    <p>공연</p>
+  <div class="click">
+      <a href="#"> 
+      <img src="img/콘서트.stop.gif" alt="" class="static">
+      <img src="img/콘서트.forever.gif" alt="" class="animated"></a>
+      </div>
+</div>
+
+<div id="cate_0">
+    <p>전시</p>
+  <div class="click">
+      <a href="#">
+          <img src="img/전시.stop.gif" alt="" class="static">
+          <img src="img/전시.forever.gif" alt="" class="animated"></a>
+      </div>
+      </div>
+</div>
+
+
+    
+    <footer>
+        <div class="footer1">
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li>ㅣ</li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li>ㅣ</li>
+            <li><a href="#">청소년 보호정책</a></li>
+            <li>ㅣ</li>
+            <li><a href="#">이용약관</a></li>
+            <li>ㅣ</li>
+            <li><a href="#">고객센터</a></li>
+            <li>ㅣ</li>
+            <li><a href="#">티켓판매안내</a></li>
+        </ul></div>
+        <div id="ft">
+        <div class="footer2">
+           <p>엔에이치엔링크 주식회사 <br>
+            주소:06043 서울특별시 강남구 강남대로 586, 제이빌딩 ㅣ 대표이사: 왕문주 ㅣ 사업자등록번호: 144-81-25090 <br>
+            1588-7890 ㅣ membership@nhnlink.co.kr ㅣ 통신판매업 신고번호: 제 2023-서울강남-04352호 ㅣ 사업자정보확인 ㅣ 개인정보보호 책임자: 서상훈</p>
+            <br>
+        </div>
+    </div>
+    
+    </footer>
+    
+</body>
+</html>

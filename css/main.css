@@ -1,0 +1,117 @@
+
+/* 슬라이더 */
+.slider {width: 100%; height: 616px; position:relative; overflow: hidden; background-color: black;}
+.slide {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover;
+    background-position: center; animation: slider 30s infinite linear;}
+.slide img {width: 100%; height: 100%;}
+
+.slide:nth-child(1) {animation-delay: 0s;}
+.slide:nth-child(2) {animation-delay: -10s;}
+.slide:nth-child(3) {animation-delay: -20s;}
+
+@keyframes slider {
+    0%{transform: translateX(0);}
+    26% {transform: translateX(0);}
+    33% {transform: translateX(-100%); animation-timing-function: step-end;}
+    93% {transform: translateX(100%);}
+    100% {transform: translateX(0);}}
+
+
+
+/* 광고 */
+
+#adver{width: 1188px; height: 280px; margin: 0 auto; display: flex; align-items: center; }
+#adver1 {width: 100%; height: 100px; background-color: rgba(210, 210, 241, 0.863); border-radius: 10px;
+overflow: hidden;}
+
+
+/*섹션*/
+/* 티켓오픈 */
+#open {width: 1188px; height: 450px; margin: 0 auto; border-radius: 20px;}
+#open h2 {margin-left:20px; margin-top: 0px; margin-bottom: 13px; font-weight: 900; padding: 18px 0px 0px 0px; }
+#open > div {width: 210px; height: 270px; margin: 0px 13px; float: left;
+border-radius: 7%;}
+#open div {text-align: center;}
+#open div img{width: 100%; height: 100%; border-radius: 7%; cursor: pointer;}
+#open div img:hover {opacity: 0.7;} 
+
+h3 {color: #141414; margin-top: 13px; cursor: pointer;}
+#open p {color: rgb(187, 0, 0); margin-top: 9px; font-size: small;
+font-weight: 700; font-family: 'Pretendard-Regular'; cursor: pointer;}
+
+
+/* sale */
+#sale {width: 1188px; height: 484px; margin: 0 auto;}
+#sale h2 {margin-left: 20px; margin-top: 50px; margin-bottom: 13px;}
+#sale > div {width: 210px; height: 270px; margin: 0px 13px; float: left; border-radius: 7%;}
+#sale div img{width: 100%; height: 100%; border-radius: 7%; cursor: pointer;}
+#sale div img:hover {opacity: 0.7; } 
+#sale div h3 {text-align: center; font-family: 'Pretendard-Regular';}
+#sale div span {float: left; color: rgb(211, 0, 0); font-size: 30px; font-weight: 900;
+margin-left: 16px; font-family: 'Pretendard-Regular'; font-weight: 900; margin-top: 3px; }
+#sale div p {float: right; margin-top: 16px; margin-right: 15px; font-family: 'Pretendard-Regular'; font-weight: 500;}
+
+
+/* best */
+#edi {width: 1188px; height: 300px; margin: 0 auto; position: relative;}
+#edi h2 {margin-left: 20px; margin-top: 10px; font-size: 30px; color: rgb(0, 0, 0); 
+    font-size: 25px; position: absolute;}
+
+#box1 {width: 1188px; height: 200px; background-color: rgba(219, 219, 219, 0.781); border-radius: 20px;
+    float: left; z-index: 1; position: absolute; left: 0; top: 50px;}
+
+
+#edip1 {width: 521px; height: 170px;  background-color: #fff;
+     z-index: 3; position: absolute; top: 16px; left: 40px; display: inline-block; border-radius: 20px; font-size: 15px; font-family: 'Pretendard-Regular';}
+#edip1 img {width: 150px; padding: 10px; float: left; border-radius: 20px; margin: 3px 3px;}
+#edip1 p {font-size: 23px; margin-top: 30px; margin-bottom: 10px; font-weight: 800; font-family: 'Pretendard-Regular'; margin-bottom: 23px;}
+
+#edip2 {width: 521px; height: 170px;  background-color: #fff; border: none; 
+    z-index: 3; position: absolute; top: 16px; left: 620px; display: inline-block; border-radius: 20px; font-family: 'Pretendard-Regular'; font-size: 15px;}
+#edip2 img {width: 150px; padding: 10px; float: left; border-radius: 20px; margin: 3px 3px;}
+#edip2 p {font-size: 23px; margin-top: 35px; margin-bottom: 10px; font-weight: 800; color: #000000; font-family: 'Pretendard-Regular'; margin-bottom: 25px;}
+
+
+/* 랭킹 */
+#ranking {width: 1188px; height: 535px; margin: 0 auto;}
+#ranking h2 {position: relative; top: 45px; margin-left: 18px;
+font-size: 25px;}
+#ranking > div {width: 210px; height: 270px; margin: 55px 13px; float: left; border-radius: 7%; position: relative;}
+#ranking .rankup img {width: 100%; height: 100%; border-radius: 15px; cursor: pointer;}
+#ranking .rankup img:hover {opacity: 0.8;}
+
+#ranking .rankup {text-align: center; font-weight: 100; font-family: 'Pretendard-Regular';}
+#ranking p {position: absolute; top: 0 ; left: 10px; color: white; font-size: 45px; font-weight: 900;}
+#in {text-align: center; margin-bottom: 5px;}
+
+
+
+/* 이벤트 */
+.event {width: 100%; height: 190px; margin: 0 auto; background-color: rgb(236, 236, 236);}
+.event img {width: 100%; height: 190px;  position: absolute;}
+.eventbox {width: 1188px; height: 100%; margin: 0 auto; position: relative; }
+.ball {width: 100px; height: 100px; background-color: red; border-radius: 50%; position: absolute;
+ margin-left: 20px; margin-top: 20px; animation: move 6s ease-in infinite Alternate; z-index: 1;}
+.ball img {width: 100%; height: 100%;}
+.ball:hover {animation-play-state: paused;}
+  div:active {animation-play-state: running;}
+
+@keyframes move {0% {top: 70px; left: 0px; transform: rotate(0deg); }
+100% {top: 70px; left: 890px; transform: rotate(360deg);}
+
+}
+/* 프로모션 */
+*{box-sizing: border-box;}
+#promotion {width: 1188px; height: 715px;  margin: 0 auto;}
+
+#promotion> h2 {position: relative; top: 85px; margin-left: 20px;}
+#promotion> .box2 {width: 1188px; height: 492px; background-color: rgba(12, 93, 199, 0.959);margin: 100px 0px; float: left;
+border-radius: 20px;}
+#promotion> .box2 img {width: 498px; height: 430px; margin: 30px; float: left; border-radius:20px;}
+
+#promotion> .box2 h1 {font-size: 35px; color: rgba(235, 235, 235, 0.966); position: relative; width: 50%; float: right;
+    margin-top: 135px; font-family: 'Pretendard-regular'; letter-spacing: 8px; line-height: 55px; font-weight: 900; text-align: left;}
+#promotion> .box2 h1 span {font-size: 25px;}
+
+
+
